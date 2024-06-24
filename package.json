@@ -10,7 +10,7 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"vercel-build": "prisma generate && prisma migrate deploy && next build"
+		"vercel-build": "prisma generate && prisma migrate deploy && svelte-kit build"
 	},
 	"prisma": {
 		"seed": "node --loader ts-node/esm prisma/seed.ts"
